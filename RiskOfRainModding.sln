@@ -1,0 +1,183 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.452
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{6DF0E002-639A-4BA3-B4B9-0CA94560D36A}"
+	ProjectSection(SolutionItems) = preProject
+		lib\0Harmony.dll = lib\0Harmony.dll
+		lib\Assembly-CSharp.dll = lib\Assembly-CSharp.dll
+		lib\Assembly-CSharp.R2API.mm.dll = lib\Assembly-CSharp.R2API.mm.dll
+		lib\BepInEx.dll = lib\BepInEx.dll
+		lib\BepInEx.Harmony.dll = lib\BepInEx.Harmony.dll
+		lib\BepInEx.Preloader.dll = lib\BepInEx.Preloader.dll
+		lib\Facepunch.Steamworks.dll = lib\Facepunch.Steamworks.dll
+		lib\KdTreeLib.dll = lib\KdTreeLib.dll
+		lib\MMHOOK_Assembly-CSharp.dll = lib\MMHOOK_Assembly-CSharp.dll
+		lib\R2API.dll = lib\R2API.dll
+		lib\strip.bat = lib\strip.bat
+		lib\TextMeshPro-1.0.55.2017.1.0b11.dll = lib\TextMeshPro-1.0.55.2017.1.0b11.dll
+		lib\Unity.Postprocessing.Runtime.dll = lib\Unity.Postprocessing.Runtime.dll
+		lib\Unity.RenderPipelines.Core.Runtime.dll = lib\Unity.RenderPipelines.Core.Runtime.dll
+		lib\Unity.RenderPipelines.Core.ShaderLibrary.dll = lib\Unity.RenderPipelines.Core.ShaderLibrary.dll
+		lib\Unity.TextMeshPro.dll = lib\Unity.TextMeshPro.dll
+		lib\UnityEngine.AccessibilityModule.dll = lib\UnityEngine.AccessibilityModule.dll
+		lib\UnityEngine.AIModule.dll = lib\UnityEngine.AIModule.dll
+		lib\UnityEngine.AnimationModule.dll = lib\UnityEngine.AnimationModule.dll
+		lib\UnityEngine.ARModule.dll = lib\UnityEngine.ARModule.dll
+		lib\UnityEngine.AssetBundleModule.dll = lib\UnityEngine.AssetBundleModule.dll
+		lib\UnityEngine.AudioModule.dll = lib\UnityEngine.AudioModule.dll
+		lib\UnityEngine.BaselibModule.dll = lib\UnityEngine.BaselibModule.dll
+		lib\UnityEngine.ClothModule.dll = lib\UnityEngine.ClothModule.dll
+		lib\UnityEngine.ClusterInputModule.dll = lib\UnityEngine.ClusterInputModule.dll
+		lib\UnityEngine.ClusterRendererModule.dll = lib\UnityEngine.ClusterRendererModule.dll
+		lib\UnityEngine.CoreModule.dll = lib\UnityEngine.CoreModule.dll
+		lib\UnityEngine.CrashReportingModule.dll = lib\UnityEngine.CrashReportingModule.dll
+		lib\UnityEngine.DirectorModule.dll = lib\UnityEngine.DirectorModule.dll
+		lib\UnityEngine.dll = lib\UnityEngine.dll
+		lib\UnityEngine.FileSystemHttpModule.dll = lib\UnityEngine.FileSystemHttpModule.dll
+		lib\UnityEngine.GameCenterModule.dll = lib\UnityEngine.GameCenterModule.dll
+		lib\UnityEngine.GridModule.dll = lib\UnityEngine.GridModule.dll
+		lib\UnityEngine.HotReloadModule.dll = lib\UnityEngine.HotReloadModule.dll
+		lib\UnityEngine.ImageConversionModule.dll = lib\UnityEngine.ImageConversionModule.dll
+		lib\UnityEngine.IMGUIModule.dll = lib\UnityEngine.IMGUIModule.dll
+		lib\UnityEngine.InputModule.dll = lib\UnityEngine.InputModule.dll
+		lib\UnityEngine.JSONSerializeModule.dll = lib\UnityEngine.JSONSerializeModule.dll
+		lib\UnityEngine.LocalizationModule.dll = lib\UnityEngine.LocalizationModule.dll
+		lib\UnityEngine.Networking.dll = lib\UnityEngine.Networking.dll
+		lib\UnityEngine.ParticleSystemModule.dll = lib\UnityEngine.ParticleSystemModule.dll
+		lib\UnityEngine.PerformanceReportingModule.dll = lib\UnityEngine.PerformanceReportingModule.dll
+		lib\UnityEngine.Physics2DModule.dll = lib\UnityEngine.Physics2DModule.dll
+		lib\UnityEngine.PhysicsModule.dll = lib\UnityEngine.PhysicsModule.dll
+		lib\UnityEngine.ProfilerModule.dll = lib\UnityEngine.ProfilerModule.dll
+		lib\UnityEngine.ScreenCaptureModule.dll = lib\UnityEngine.ScreenCaptureModule.dll
+		lib\UnityEngine.SharedInternalsModule.dll = lib\UnityEngine.SharedInternalsModule.dll
+		lib\UnityEngine.SpatialTracking.dll = lib\UnityEngine.SpatialTracking.dll
+		lib\UnityEngine.SpriteMaskModule.dll = lib\UnityEngine.SpriteMaskModule.dll
+		lib\UnityEngine.SpriteShapeModule.dll = lib\UnityEngine.SpriteShapeModule.dll
+		lib\UnityEngine.StreamingModule.dll = lib\UnityEngine.StreamingModule.dll
+		lib\UnityEngine.StyleSheetsModule.dll = lib\UnityEngine.StyleSheetsModule.dll
+		lib\UnityEngine.SubstanceModule.dll = lib\UnityEngine.SubstanceModule.dll
+		lib\UnityEngine.TerrainModule.dll = lib\UnityEngine.TerrainModule.dll
+		lib\UnityEngine.TerrainPhysicsModule.dll = lib\UnityEngine.TerrainPhysicsModule.dll
+		lib\UnityEngine.TextCoreModule.dll = lib\UnityEngine.TextCoreModule.dll
+		lib\UnityEngine.TextRenderingModule.dll = lib\UnityEngine.TextRenderingModule.dll
+		lib\UnityEngine.TilemapModule.dll = lib\UnityEngine.TilemapModule.dll
+		lib\UnityEngine.Timeline.dll = lib\UnityEngine.Timeline.dll
+		lib\UnityEngine.TimelineModule.dll = lib\UnityEngine.TimelineModule.dll
+		lib\UnityEngine.TLSModule.dll = lib\UnityEngine.TLSModule.dll
+		lib\UnityEngine.UI.dll = lib\UnityEngine.UI.dll
+		lib\UnityEngine.UIElementsModule.dll = lib\UnityEngine.UIElementsModule.dll
+		lib\UnityEngine.UIModule.dll = lib\UnityEngine.UIModule.dll
+		lib\UnityEngine.UmbraModule.dll = lib\UnityEngine.UmbraModule.dll
+		lib\UnityEngine.UNETModule.dll = lib\UnityEngine.UNETModule.dll
+		lib\UnityEngine.UnityAnalyticsModule.dll = lib\UnityEngine.UnityAnalyticsModule.dll
+		lib\UnityEngine.UnityConnectModule.dll = lib\UnityEngine.UnityConnectModule.dll
+		lib\UnityEngine.UnityTestProtocolModule.dll = lib\UnityEngine.UnityTestProtocolModule.dll
+		lib\UnityEngine.UnityWebRequestAssetBundleModule.dll = lib\UnityEngine.UnityWebRequestAssetBundleModule.dll
+		lib\UnityEngine.UnityWebRequestAudioModule.dll = lib\UnityEngine.UnityWebRequestAudioModule.dll
+		lib\UnityEngine.UnityWebRequestModule.dll = lib\UnityEngine.UnityWebRequestModule.dll
+		lib\UnityEngine.UnityWebRequestTextureModule.dll = lib\UnityEngine.UnityWebRequestTextureModule.dll
+		lib\UnityEngine.UnityWebRequestWWWModule.dll = lib\UnityEngine.UnityWebRequestWWWModule.dll
+		lib\UnityEngine.VehiclesModule.dll = lib\UnityEngine.VehiclesModule.dll
+		lib\UnityEngine.VFXModule.dll = lib\UnityEngine.VFXModule.dll
+		lib\UnityEngine.VideoModule.dll = lib\UnityEngine.VideoModule.dll
+		lib\UnityEngine.VRModule.dll = lib\UnityEngine.VRModule.dll
+		lib\UnityEngine.WindModule.dll = lib\UnityEngine.WindModule.dll
+		lib\UnityEngine.XRModule.dll = lib\UnityEngine.XRModule.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PixelFont", "PixelFont", "{93CBCE05-1C1B-43ED-9CC9-B0CB0E19A85C}"
+	ProjectSection(SolutionItems) = preProject
+		PixelFont\asset.font = PixelFont\asset.font
+		PixelFont\icon.png = PixelFont\icon.png
+		PixelFont\manifest.json = PixelFont\manifest.json
+		PixelFont\README.md = PixelFont\README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FirstPersonView", "FirstPersonView\FirstPersonView.csproj", "{77D587C2-DE15-4653-8514-8A405389FC10}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BalancedObliterate", "BalancedObliterate\BalancedObliterate.csproj", "{3BB03665-164A-460E-BABB-0B076EE99CC5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VoteSaving", "VoteSaving\VoteSaving.csproj", "{583DBA2E-74E0-49A6-9630-0BD522EA8913}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TextPlus", "TextPlus\TextPlus.csproj", "{89AA2432-BF22-48D7-8BB2-68CFC567EC5E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuffDisplayAPI", "BuffDisplayAPI\BuffDisplayAPI.csproj", "{F8F8281D-DDD2-4146-90D0-294159E604EA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BanditPlus", "BanditPlus\BanditPlus.csproj", "{8834499D-F315-4DBB-997C-2EDDFBC1335C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NoPickup", "NoPickup\NoPickup.csproj", "{6E073FD4-B3ED-4F0B-9586-A5B040723070}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuffPlus", "BuffPlus\BuffPlus.csproj", "{BF226551-9284-4863-8881-BF85AEB18E0A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NoBossNoWait", "NoBossNoWait\NoBossNoWait.csproj", "{8CCAFBBB-2E6D-4FA1-9ABB-0DEA0FAE3105}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MercCombo", "MercCombo\MercCombo.csproj", "{143969E8-B1E5-4109-B4BB-25824DF7822C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModdedQuickplay", "ModdedQuickplay\ModdedQuickplay.csproj", "{A3A98F56-4901-4B6C-9699-7FEB5463C068}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FontPlus", "FontPlus\FontPlus.csproj", "{89207A86-370A-4BE0-A9C4-6E0E9A9403E5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{77D587C2-DE15-4653-8514-8A405389FC10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77D587C2-DE15-4653-8514-8A405389FC10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77D587C2-DE15-4653-8514-8A405389FC10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77D587C2-DE15-4653-8514-8A405389FC10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BB03665-164A-460E-BABB-0B076EE99CC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BB03665-164A-460E-BABB-0B076EE99CC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BB03665-164A-460E-BABB-0B076EE99CC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BB03665-164A-460E-BABB-0B076EE99CC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{583DBA2E-74E0-49A6-9630-0BD522EA8913}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{583DBA2E-74E0-49A6-9630-0BD522EA8913}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{583DBA2E-74E0-49A6-9630-0BD522EA8913}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{583DBA2E-74E0-49A6-9630-0BD522EA8913}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89AA2432-BF22-48D7-8BB2-68CFC567EC5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89AA2432-BF22-48D7-8BB2-68CFC567EC5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89AA2432-BF22-48D7-8BB2-68CFC567EC5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89AA2432-BF22-48D7-8BB2-68CFC567EC5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8F8281D-DDD2-4146-90D0-294159E604EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8F8281D-DDD2-4146-90D0-294159E604EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8F8281D-DDD2-4146-90D0-294159E604EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8F8281D-DDD2-4146-90D0-294159E604EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8834499D-F315-4DBB-997C-2EDDFBC1335C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8834499D-F315-4DBB-997C-2EDDFBC1335C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8834499D-F315-4DBB-997C-2EDDFBC1335C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8834499D-F315-4DBB-997C-2EDDFBC1335C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E073FD4-B3ED-4F0B-9586-A5B040723070}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E073FD4-B3ED-4F0B-9586-A5B040723070}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E073FD4-B3ED-4F0B-9586-A5B040723070}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E073FD4-B3ED-4F0B-9586-A5B040723070}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF226551-9284-4863-8881-BF85AEB18E0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF226551-9284-4863-8881-BF85AEB18E0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF226551-9284-4863-8881-BF85AEB18E0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF226551-9284-4863-8881-BF85AEB18E0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CCAFBBB-2E6D-4FA1-9ABB-0DEA0FAE3105}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CCAFBBB-2E6D-4FA1-9ABB-0DEA0FAE3105}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CCAFBBB-2E6D-4FA1-9ABB-0DEA0FAE3105}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CCAFBBB-2E6D-4FA1-9ABB-0DEA0FAE3105}.Release|Any CPU.Build.0 = Release|Any CPU
+		{143969E8-B1E5-4109-B4BB-25824DF7822C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{143969E8-B1E5-4109-B4BB-25824DF7822C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{143969E8-B1E5-4109-B4BB-25824DF7822C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{143969E8-B1E5-4109-B4BB-25824DF7822C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3A98F56-4901-4B6C-9699-7FEB5463C068}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3A98F56-4901-4B6C-9699-7FEB5463C068}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3A98F56-4901-4B6C-9699-7FEB5463C068}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3A98F56-4901-4B6C-9699-7FEB5463C068}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89207A86-370A-4BE0-A9C4-6E0E9A9403E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89207A86-370A-4BE0-A9C4-6E0E9A9403E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89207A86-370A-4BE0-A9C4-6E0E9A9403E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89207A86-370A-4BE0-A9C4-6E0E9A9403E5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FED93AF8-E445-4E62-B708-336B584309CC}
+	EndGlobalSection
+EndGlobal
