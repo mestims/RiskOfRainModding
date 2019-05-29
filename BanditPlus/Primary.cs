@@ -6,6 +6,8 @@ namespace EntityStates.Bandit
 {
     public class Primary : BaseState
     {
+        bool didDoubleShot;
+
         public static void SetPrimary(GameObject gameObject)
         {
             SkillLocator component = gameObject.GetComponent<SkillLocator>();
@@ -18,48 +20,26 @@ namespace EntityStates.Bandit
         public override void OnEnter()
         {
             base.OnEnter();
-       
-            AddRecoil(-1f * recoilAmplitude, -2f * recoilAmplitude, -0.5f * recoilAmplitude, 0.5f * recoilAmplitude);
-            maxDuration = baseMaxDuration / attackSpeedStat;
-            minDuration = baseMinDuration / attackSpeedStat;
-            Ray aimRay = GetAimRay();
-            StartAimMode(aimRay, 2f, false);
-            Util.PlaySound(attackSoundString, gameObject);
-            PlayAnimation("Gesture, Additive", "FireShotgun", "FireShotgun.playbackRate", maxDuration * 1.1f);
-            PlayAnimation("Gesture, Override", "FireShotgun", "FireShotgun.playbackRate", maxDuration * 1.1f);
-            string muzzleName = "MuzzleShotgun";
-            if (effectPrefab)
+            var random = Random.value;
+            didDoubleShot = random < doubleShotChance;
+            if (didDoubleShot)
             {
-                EffectManager.instance.SimpleMuzzleFlash(effectPrefab, gameObject, muzzleName, false);
+                fireSkill(doubleShotAnimDuration, doubleShotAnimDuration, doubleShotAnimStart);            
             }
-            if (isAuthority)
+            else
             {
-                new BulletAttack
-                {
-                    owner = gameObject,
-                    weapon = gameObject,
-                    origin = aimRay.origin,
-                    aimVector = aimRay.direction,
-                    minSpread = 0f,
-                    maxSpread = characterBody.spreadBloomAngle,
-                    bulletCount = 1,
-                    procCoefficient = 1f,
-                    damage = damageCoefficient * damageStat,
-                    force = force,
-                    falloffModel = BulletAttack.FalloffModel.DefaultBullet,
-                    tracerEffectPrefab = tracerEffectPrefab,
-                    muzzleName = muzzleName,
-                    hitEffectPrefab = hitEffectPrefab,
-                    isCrit = Util.CheckRoll(critStat, characterBody.master),
-                    HitEffectNormal = false,
-                    radius = 0f
-                }.Fire();
+                fireSkill(baseMaxDuration / attackSpeedStat, baseMinDuration / attackSpeedStat, 2f);
             }
-            characterBody.AddSpreadBloom(spreadBloomValue);
+            
         }
 
         public override void OnExit()
         {
+            if (didDoubleShot)
+            {
+                fireSkill(baseMaxDuration / attackSpeedStat, baseMinDuration / attackSpeedStat, 2f);
+            }
+            
             base.OnExit();
         }
 
@@ -82,6 +62,48 @@ namespace EntityStates.Bandit
                 return InterruptPriority.Any;
             }
             return InterruptPriority.Skill;
+        }
+
+        private void fireSkill(float max, float min, float animStart)
+        {
+            AddRecoil(-1f * recoilAmplitude, -2f * recoilAmplitude, -0.5f * recoilAmplitude, 0.5f * recoilAmplitude);
+            maxDuration = max;
+            minDuration = min;
+            Ray aimRay = GetAimRay();
+            StartAimMode(aimRay, animStart, false);
+            Util.PlaySound(attackSoundString, gameObject);
+            PlayAnimation("Gesture, Additive", "FireShotgun", "FireShotgun.playbackRate", maxDuration);
+            PlayAnimation("Gesture, Override", "FireShotgun", "FireShotgun.playbackRate", maxDuration);
+            string muzzleName = "MuzzleShotgun";
+            if (effectPrefab)
+            {
+                EffectManager.instance.SimpleMuzzleFlash(effectPrefab, gameObject, muzzleName, false);
+            }
+            if (isAuthority)
+            {
+
+                new BulletAttack
+                {
+                    owner = gameObject,
+                    weapon = gameObject,
+                    origin = aimRay.origin,
+                    aimVector = aimRay.direction,
+                    minSpread = 0f,
+                    maxSpread = characterBody.spreadBloomAngle,
+                    bulletCount = 1,
+                    procCoefficient = 1f,
+                    damage = damageCoefficient * damageStat,
+                    force = force,
+                    falloffModel = BulletAttack.FalloffModel.DefaultBullet,
+                    tracerEffectPrefab = tracerEffectPrefab,
+                    muzzleName = muzzleName,
+                    hitEffectPrefab = hitEffectPrefab,
+                    isCrit = Util.CheckRoll(critStat, characterBody.master),
+                    HitEffectNormal = false,
+                    radius = 0f
+                }.Fire();
+            }
+            characterBody.AddSpreadBloom(spreadBloomValue);
         }
 
         public static void config()
@@ -127,6 +149,12 @@ namespace EntityStates.Bandit
         public static float spreadBloomValue = 0.5f;
 
         public static float procCoefficient = 1f;
+
+        public static float doubleShotChance = 0.2f;
+
+        public static float doubleShotAnimDuration = 0.1f;
+
+        public static float doubleShotAnimStart = 0.1f;
 
         private float maxDuration;
 

@@ -83,7 +83,8 @@ namespace EntityStates.Bandit
             duration = baseDuration / attackSpeedStat;
             totalDuration = stealthDuration + duration;
             PlayCrossfade("Gesture, Smokescreen", "CastSmokescreen", "CastSmokescreen.playbackRate", duration, 0.2f);
-            Util.PlaySound(jumpSoundString, gameObject);
+            //Util.PlaySound(jumpSoundString, gameObject);
+            Util.PlaySound(prepSoundString, gameObject);
             EffectManager.instance.SpawnEffect(initialEffectPrefab, new EffectData
             {
                 origin = transform.position
@@ -168,7 +169,9 @@ namespace EntityStates.Bandit
         public static float stealthDuration = 3.5f;
         
         public const string jumpSoundString = "Play_bandit_shift_jump";
-        
+
+        public const string prepSoundString = "Play_bandit_M2_load";
+
         public const string startCloakSoundString = "Play_bandit_shift_land";
         
         public const string stopCloakSoundString = "Play_bandit_shift_end";
